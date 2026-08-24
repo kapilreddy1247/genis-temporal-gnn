@@ -1,4 +1,3 @@
-
 # GeNIS Dataset Audit
 
 > This document records the actual structure and properties of the GeNIS CSV files inspected for this project. It will be updated as the complete dataset and scenario structure are analyzed.
@@ -26,7 +25,7 @@
 | Final graph representation | Not finalized |
 | Final train/validation/test strategy | Not finalized |
 
-**Responsible:** Person 1 â€” Data Engineering & Graph Construction
+**Responsible:** Person 1 - Data Engineering & Graph Construction
 
 **Review:** All team members
 
@@ -36,7 +35,7 @@
 
 ### Dataset
 
-**GeNIS â€” GECAD Network Intrusion Scenarios**
+**GeNIS - GECAD Network Intrusion Scenarios**
 
 The project uses GeNIS as the network-intrusion dataset for investigating whether temporal graph representations can improve future attack-risk prediction.
 
@@ -527,7 +526,7 @@ The currently inspected records cover approximately:
 
 ```text
 2025-02-06 09:00:44
-        â†“
+        |
 2025-02-12 16:42:04
 ```
 
@@ -750,9 +749,9 @@ Valid:
 
 ```text
 Past observations
-       â†“
+       |
 Prediction time t
-       â†“
+       |
 Future target
 ```
 
@@ -760,7 +759,7 @@ Potentially invalid:
 
 ```text
 Past + future observations
-       â†“
+       |
 Prediction time t
 ```
 
@@ -783,9 +782,9 @@ Correct:
 
 ```text
 Training data
-     â†“
+     |
 Fit scaler
-     â†“
+     |
 Transform train
 Transform validation
 Transform test
@@ -795,7 +794,7 @@ Incorrect:
 
 ```text
 Train + validation + test
-     â†“
+     |
 Fit scaler
 ```
 
@@ -857,7 +856,7 @@ Communication from source to destination
 Conceptually:
 
 ```text
-Host A â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’ Host B
+Host A â”€â”€â”€â”€â”€â”€â”€â”€â”€-> Host B
 ```
 
 Potential edge features may be derived from flow-level information such as:
@@ -881,7 +880,7 @@ The final graph representation is not yet finalized.
 The proposed project representation is:
 
 ```text
-G(t-k) â†’ G(t-k+1) â†’ ... â†’ G(t-1) â†’ G(t)
+G(t-k) -> G(t-k+1) -> ... -> G(t-1) -> G(t)
 ```
 
 Each graph should represent network activity within a defined temporal window.
@@ -916,10 +915,10 @@ the model predicts whether a host will exhibit malicious activity during a defin
 Example:
 
 ```text
-Host A â†’ 0.05
-Host B â†’ 0.87
-Host C â†’ 0.22
-Host D â†’ 0.63
+Host A -> 0.05
+Host B -> 0.87
+Host C -> 0.22
+Host D -> 0.63
 ```
 
 These values represent predicted future risk probabilities/scores.
@@ -928,7 +927,7 @@ They do not represent certainty that an attack will occur.
 
 ---
 
-## 26. Prediction Task â€” Not Finalized
+## 26. Prediction Task - Not Finalized
 
 The following decisions remain open:
 
@@ -1003,7 +1002,7 @@ However:
 
 ```text
 Flow duration
-â‰ 
+!=
 Temporal graph snapshot interval
 ```
 
@@ -1224,7 +1223,7 @@ IPv6-ICMP
 
 ```text
 2025-02-06 09:00:44
-        â†“
+        |
 2025-02-12 16:42:04
 ```
 
@@ -1421,7 +1420,7 @@ Before training any model:
 
 The next stage is deeper exploratory analysis.
 
-### Priority 1 â€” Scenario structure
+### Priority 1 - Scenario structure
 
 Determine:
 
@@ -1433,7 +1432,7 @@ When does an attack begin?
 When does an attack end?
 ```
 
-### Priority 2 â€” Temporal behavior
+### Priority 2 - Temporal behavior
 
 Analyze:
 
@@ -1445,7 +1444,7 @@ Activity per temporal window
 Attack activity over time
 ```
 
-### Priority 3 â€” Network behavior
+### Priority 3 - Network behavior
 
 Analyze:
 
@@ -1457,7 +1456,7 @@ Protocols
 Source-destination relationships
 ```
 
-### Priority 4 â€” Feature behavior
+### Priority 4 - Feature behavior
 
 Analyze:
 
@@ -1470,19 +1469,19 @@ Correlation
 Categorical values
 ```
 
-### Priority 5 â€” Prediction formulation
+### Priority 5 - Prediction formulation
 
 Only after the above:
 
 ```text
 Observation window
-        â†“
+        |
 Prediction horizon
-        â†“
+        |
 Future target
-        â†“
+        |
 Node label
-        â†“
+        |
 High-risk threshold
 ```
 
@@ -1512,17 +1511,17 @@ However, the following have not yet been finalized:
 
 ```text
 Flow Records
-      â†“
+      |
 Temporal Window Definition
-      â†“
+      |
 Graph Construction
-      â†“
+      |
 Node / Edge Features
-      â†“
+      |
 Observation History
-      â†“
+      |
 Future Prediction Target
-      â†“
+      |
 Leakage-Safe Split
 ```
 
@@ -1573,7 +1572,7 @@ The next technical step is deeper EDA and scenario/timeline analysis.
 
 ## 39. Document Metadata
 
-**Dataset:** GeNIS — GECAD Network Intrusion Scenarios
+**Dataset:** GeNIS - GECAD Network Intrusion Scenarios
 
 **Files currently audited:** 11 CSV files
 
@@ -1581,7 +1580,7 @@ The next technical step is deeper EDA and scenario/timeline analysis.
 
 **Columns:** 125
 
-**Audit owner:** Nayanala Abhishek
+**Audit owner:** Person 1
 
 **Project:** Early Cyberattack Prediction Using Temporal Graph Neural Networks and Explainable AI
 

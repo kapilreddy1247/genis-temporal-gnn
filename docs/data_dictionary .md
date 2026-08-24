@@ -1745,7 +1745,7 @@ It will be recorded here after the EDA and preprocessing experiments.
 
 **Document:** Data Dictionary
 
-**Owner:** Nayanala Abhishek â€” Data Engineering & Graph Construction
+**Owner:** Nayanala Abhishek -- Data Engineering & Graph Construction
 
 **Review:** All team members
 

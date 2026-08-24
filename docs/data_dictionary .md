@@ -1739,13 +1739,13 @@ It will be recorded here after the EDA and preprocessing experiments.
 
 # 31. Document Metadata
 
-**Dataset:** GeNIS â€” GECAD Network Intrusion Scenarios
+**Dataset:** GeNIS - GECAD Network Intrusion Scenarios
 
 **Current schema:** 125 columns
 
 **Document:** Data Dictionary
 
-**Owner:** Nayanala Abhishek -- Data Engineering & Graph Construction
+**Owner:** Nayanala Abhishek - Data Engineering & Graph Construction
 
 **Review:** All team members
 

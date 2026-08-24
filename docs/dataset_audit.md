@@ -1573,7 +1573,7 @@ The next technical step is deeper EDA and scenario/timeline analysis.
 
 ## 39. Document Metadata
 
-**Dataset:** GeNIS â€” GECAD Network Intrusion Scenarios
+**Dataset:** GeNIS — GECAD Network Intrusion Scenarios
 
 **Files currently audited:** 11 CSV files
 

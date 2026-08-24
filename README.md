@@ -1526,5 +1526,3 @@ Before implementing the final prediction task or Temporal GNN, we must inspect t
 * Prediction target
 * Train/validation/test strategy
 * Potential leakage
-
-**No experimental results should be reported until those experiments are actually performed.**

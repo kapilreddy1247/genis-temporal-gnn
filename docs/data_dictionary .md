@@ -1581,7 +1581,7 @@ The following fields should receive special attention:
 The current project concept maps the network fields as follows:
 
 ```text
-SrcAddr â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’ DstAddr
+SrcAddr â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€-> DstAddr
    â”‚                       â”‚
    â”‚                       â”‚
  Source node          Destination node
@@ -1625,7 +1625,7 @@ can be used to order flow records and assign them to temporal windows.
 The project will eventually construct:
 
 ```text
-G(t-k) â†’ ... â†’ G(t-1) â†’ G(t)
+G(t-k) -> ... -> G(t-1) -> G(t)
 ```
 
 However, the temporal window size is currently:
@@ -1672,23 +1672,23 @@ The final feature-selection pipeline should follow:
 
 ```text
 Raw columns
-     â†“
+     |
 Remove direct labels
-     â†“
+     |
 Remove inappropriate identifiers
-     â†“
+     |
 Check missingness
-     â†“
+     |
 Check constant features
-     â†“
+     |
 Check correlations
-     â†“
+     |
 Check leakage
-     â†“
+     |
 Select candidate behavioral features
-     â†“
+     |
 Train baseline
-     â†“
+     |
 Evaluate
 ```
 
@@ -1745,7 +1745,7 @@ It will be recorded here after the EDA and preprocessing experiments.
 
 **Document:** Data Dictionary
 
-**Owner:** Nayanala Abhishek - Data Engineering & Graph Construction
+**Owner:** Person 1 - Data Engineering & Graph Construction
 
 **Review:** All team members
 
